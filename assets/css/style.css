@@ -1,0 +1,142 @@
+body {
+	background-color: #DFDFDF;
+	height: 100vh;
+	position: relative;
+}
+header {
+	background-color: #009488;
+	height: 15vh;
+    position: fixed;
+    width: 100%;
+}
+#mensajes {
+	position: absolute;
+	height: 85vh;
+	top: 3vh;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    max-width: 1100px;
+    width: 85%;
+    box-shadow: 0px 3px 5px rgba(41, 43, 44, 0.5);
+    overflow: hidden;
+}
+.card-header {
+	background-color: #EEEEEE;
+}
+.card-header.box-left {
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.perfil-usuario {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-usuario img {
+	display: block;
+    width: 50px;
+    height: initial;
+}
+.user-icons span {
+    color: #6b6c6d;
+    font-size: 25px;
+    margin: 5px 10px;
+    display: inline-block;
+}
+.info-usuario {
+    float: left;
+    margin: 0 10px;
+}
+.card-header .info-usuario h6 {
+	color: #6b6c6d;
+}
+.busqueda {
+    padding: .75rem 1.25rem;
+}
+.busqueda input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: .3em .3em .3em 3.5em;
+}
+#lista-mensajes, #messenger {
+    padding: 0;
+}
+#lista-mensajes ul {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+#lista-mensajes ul li.mensaje {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+	padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    transition: .5s ease all;
+}
+#lista-mensajes ul li.mensaje:hover {
+	background-color: #eee;
+	transition: .5s ease all;
+}
+#lista-mensajes ul li.mensaje p {
+	margin: 0;
+}
+.bubble {
+    width: 45%;
+    padding: 0.75rem .5rem .25rem 1rem;
+    clear: both;
+    margin: .25rem 0;
+}
+.bubble.pull-right {
+	background-color: #DCF6C4;
+	border: none;
+}
+.bubble > * {
+    margin-bottom: .25rem;
+    margin-right: 1rem;
+}
+.bubble p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.bubble small {
+	display: inline-block;
+    margin: 0;
+}
+.ingresar-mensaje {
+    padding: .75rem 1.25rem;
+}
+.ingresar-mensaje .user-icons span {
+	margin: 0;
+    line-height: 1.1;
+}
+.ingresar-mensaje input {
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.75rem;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#conversacion {
+	background-color: #EDE9E4;
+	background-image: url("../img/chat-panel-bg.png");
+    overflow-y: scroll;
+    height: 70vh;
+    padding: 0.75rem 1.25rem;
+}
+#enter {
+	cursor: pointer;
+	color: #aaa;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
